@@ -22,7 +22,8 @@ public class CrossDriver {
              */
     public static WebDriver getDriver(String browser) {
         //eger browser a bir deger atanmamıssa Properties'deki browser dosyasında tanımlı browser calissin
-        browser=browser==null ? ConfigReader.getProperty("browser"):browser;
+        browser=browser==null ? ConfigReader.getProperty("browser"):browser;//ternary ile olustrudk
+
 
 
         if (driver == null) {
@@ -57,7 +58,7 @@ public class CrossDriver {
 
     public static void closeDriver() {
         if (driver != null) { // driver'a değer atanmışsa kapat
-            driver.close();
+            driver.quit();
             driver = null; // Kapandıktan sonra sonraki açmaları garanti altına almak için driver'i tekrar null yaptık
         }
     }

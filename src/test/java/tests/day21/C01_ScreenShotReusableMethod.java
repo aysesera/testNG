@@ -29,7 +29,7 @@ public class C01_ScreenShotReusableMethod {
         Thread.sleep(2000);
         amznPage.aramaKutusu.sendKeys("Nutella", Keys.ENTER);
         //Arama sonuc yazısı Webelementinin resmini alınız
-        ReusableMethods.getScreenshotWebElement("AramaSonucWE",amznPage.aramaSonucuWE);
+        ReusableMethods.getScreenshotWebElement("AramaSonucWE",amznPage.aramaSonucWE);
    Driver.quitDriver();
     }
 }

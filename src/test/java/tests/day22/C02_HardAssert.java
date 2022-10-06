@@ -25,5 +25,6 @@ public class C02_HardAssert extends TestBaseCross {
         Assert.assertTrue(sonuc.isDisplayed());
         //6-arama sonucunun Nutella içerdigini test edin
         Assert.assertTrue(sonuc.getText().contains("Nutella"));
+
     }
 }
